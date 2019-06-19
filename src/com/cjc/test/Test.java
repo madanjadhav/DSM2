@@ -22,7 +22,7 @@ public class Test {
 		
 		Employee e2=new Employee();
 		e2.setEmp_name("Amit");
-		e2.setAddress("Wai");
+		
 		
 		Employee e3=new Employee();
 		e3.setEmp_name("Ravi");
