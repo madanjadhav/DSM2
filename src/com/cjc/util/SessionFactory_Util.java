@@ -31,6 +31,11 @@ public class SessionFactory_Util {
 			setting.put(Environment.SHOW_SQL, "true");
 			setting.put(Environment.FORMAT_SQL, "true");
 			
+			setting.put(Environment.DRIVER, "com.mysql.jdbc.Driver");
+			setting.put(Environment.URL, "jdbc:mysql://localhost:3306/OnetoMant_Bidirectional");
+			setting.put(Environment.USER, "root");
+			
+			
 			StandardServiceRegistry sr=new StandardServiceRegistryBuilder().applySettings(setting).build();
 			MetadataSources mds=new MetadataSources(sr);
 			mds.addAnnotatedClass(Department.class).addAnnotatedClass(Employee.class);
